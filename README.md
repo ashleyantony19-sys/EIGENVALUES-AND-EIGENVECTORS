@@ -12,32 +12,19 @@ To write a python program to find the Eigenvalues and Eigen Vectors
 
 ## Program:
 ```
+#Program to find the eigen values and eigen vectors.
+#Developed by: ASHLEY ANTONY
+#RegisterNumber: 212225220013
+import os
+os.environ["OPENBLAS_NUM_THREADS"]="1"
 import numpy as np
-
-A = np.array([[2, 1],
-              [1, 2]])
-
-value, vector = np.linalg.eig(A)
-
-print("Eigenvalues:")
-print(value)
-
-print("Eigenvectors:")
-print(vector)
+matrix=np.array([[2,-3,0],[2,-5,0],[0,0,3]])
+evalu,evect=np.linalg.eig(matrix)
+print("Eigen values are {} and Eigen Vectors are {}".format(evalu,evect))
 ```
 ## Output:
 
-<img width="763" height="480" alt="Screenshot 2026-05-11 191430" src="https://github.com/user-attachments/assets/f2a07421-6faa-4756-b86c-1f3ed18592d7" />
-
-
-
-
-
-
-
-<img width="681" height="379" alt="Screenshot 2026-05-11 191435" src="https://github.com/user-attachments/assets/bcb984dc-a5b8-450c-b4c6-1e9fa4c664f6" />
-
-
+<img width="1043" height="289" alt="WhatsApp Image 2026-06-01 at 9 35 23 AM" src="https://github.com/user-attachments/assets/b5030874-7346-4bd5-b8db-f0a58be43f88" />
 
 
 
